@@ -6,11 +6,19 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th></th>
+      <th></th>
       <th>Description</th>
+      <th></th>
+      <th></th>
       <th>Published</th>
+      <th></th>
+      <th></th>
       <th>Published at</th>
+      <th></th>
+      <th></th>
       <th>Author</th>
-      <th colspan="3"></th>
+      <th colspan="8"></th>
     </tr>
   </thead>
 
@@ -18,12 +26,22 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
+        <th></th>
+        <th></th>
         <td><%= post.description %></td>
+        <th></th>
+        <th></th>
         <td><%= post.published %></td>
+        <th></th>
+        <th></th>
         <td><%= post.published_at %></td>
+        <th></th>
+        <th></th>
         <td><%= post.author_id %></td>
         <td><%= link_to 'Show', post %></td>
+        <th></th>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <th></th>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
